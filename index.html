@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="crud.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="container">
+          <h1>Student Management CRUD</h1>
+          
+          <!-- ....Form.... -->
+        <form>
+          <input type="text" class="input1" id="name" placeholder="  Name" >  <span><input type="text" class="input2" id="email" placeholder="  Email" ></span>
+
+          <input type="number" class="input3" id="grade" placeholder="  GPA" >  <span><input type="number" class="input4" id="age" placeholder="  Age" ></span>   <span><input type="text" class="input5" id="degree" placeholder="  Degree" ></span>
+
+          <button class="submit" id="submit" onclick="addStudent()">Add Student</button><br>
+
+          <input type="text" class="input6" id="search" onkeyup="search()" placeholder="  Search By Name, email or degree"> 
+        </form>
+
+        <!-- ....For Table .... -->
+          <table class="table" id="table">
+            <thead>
+                <tr class="col">
+                    <th>ID</th>
+                    <th>Student Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GPA</th>
+                    <th>Degree</th>
+                </tr>
+
+                <tbody id="tbody">
+                
+                </tbody>
+            </thead>
+          </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
